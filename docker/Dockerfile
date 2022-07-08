@@ -6,6 +6,7 @@ RUN apt-get -y install apt-utils nginx
 RUN chgrp -R 0 /home/webgoat
 RUN chmod -R g=u /home/webgoat
 
+#Comment here
 USER webgoat
 
 COPY --chown=webgoat nginx.conf /etc/nginx/nginx.conf
